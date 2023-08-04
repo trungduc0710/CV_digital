@@ -1,0 +1,96 @@
+/* // X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { ... }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { ... }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { ... }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { ... }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { ... }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width */
+@media screen and (min-width:768.01) and (max-width: 992px) {
+  section > .container {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 20px;
+  }
+
+  /* NAVIGATION */
+
+  .avatar {
+    display: none;
+  }
+
+  nav.container {
+    display: flex;
+    justify-content: center;
+    padding: 0 0px !important;
+  }
+
+  #nav-bar .container a {
+    width: max-content;
+  }
+
+  #nav-bar .container a:nth-child(2){                   /*tạo viền quanh thẻ điều hướng*/
+    border-right: 1px solid #c9c9c9;
+  }
+
+/* Thong tin Nghe nghiep */
+
+.job-info-box {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);                  /*chia lưới có 3 cột rộng bằng nhau*/
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.5;
+  column-gap: 20px;
+  margin: 0 10px;
+}
+
+.gitbl {
+  display: grid;
+  grid-template-columns: 75% 25%;                         /*chia lưới trong lưới*/       
+  grid-template-rows: min-content;                        /*để tránh việc các dòng tự chia lại chiều cao*/
+  /* justify-content: space-between; */
+  align-items:baseline;
+  border: 1px solid #c9c9c9;
+  padding: 40px 20px 40px 20px;
+}
+
+.favo-icons{                                                      /*tạo các biểu tượng phần sở thích*/
+  grid-column: 1/-1;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4,auto);
+  gap: 10px;
+  padding-top: 28px;
+}
+
+/* Chung chi - Giai thuong */
+
+.cer-details{
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px 0;
+  padding: 0px 0;
+
+}
+
+.cer-details img{
+  width: 100%;
+}
+
+.border-left{
+  padding-left: 20px;
+  border-left: 1px solid #d6c08d;
+}
+
+}

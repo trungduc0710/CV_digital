@@ -1,0 +1,221 @@
+/* 576px; 768px; 992px; 1200px; 1400px */
+@media screen and (max-width: 768px) {
+  section > .container {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    padding: 30px 0px;
+  }
+
+  .container h1{
+    margin: 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding-left: 10px;
+  }
+
+  /* Banner */
+
+  #banner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #banner h1 {
+    font-size: 30px;
+    font-weight: 500;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform-origin: translate(-0%, 0%);                    /*căn giữa chữ trên banner*/
+  }
+
+  #banner span {
+    font-size: 12px;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    color: #f0f0f085;
+  }
+
+  /* NAVIGATION */
+
+  nav.container {
+    flex-direction: column;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  #nav-bar .container a {
+    display: flex;
+    font-size: 12px;
+    padding: 16px 0px;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    color: #000000;
+  }
+
+  #nav-bar .container a:nth-child(odd) {
+    /*tạo viền quanh thẻ điều hướng*/
+    border: none;
+  }
+
+  #nav-bar .container a:nth-child(2) {
+    /*tạo viền quanh thẻ điều hướng*/
+    border: none;
+  }
+
+  #about .container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 0 !important;
+    line-height: 1.5;
+  }
+
+  /* Muc tieu Nghe nghiep - Thong tin Ca Nhan */
+
+  #target,
+  #personal-info {
+  padding: 40px 20px 40px 20px;
+}
+
+  #target h1,
+  #personal-info h1 {
+  padding: 0 0 30px 0;
+}
+
+#personal-info ul{
+  padding: 0;
+}
+
+/* Thong tin Nghe nghiep */
+
+.job-info-box {
+  display: grid;
+  grid-template-columns: 100%;                  /*chia lưới có 3 cột rộng bằng nhau*/
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.5;
+  column-gap: 20px;
+  margin: 0 10px;
+}
+
+.gitbl {
+  display: grid;
+  grid-template-columns: 75% 25%;                         /*chia lưới trong lưới*/       
+  grid-template-rows: min-content;                        /*để tránh việc các dòng tự chia lại chiều cao*/
+  /* justify-content: space-between; */
+  align-items:baseline;
+  border: 1px solid #c9c9c9;
+  padding: 40px 20px 40px 20px;
+}
+
+.skill{
+  grid-row: 2/3;
+}
+
+.lang{
+  grid-row: 3/4;
+}
+
+.act{
+  grid-row: 4/5;
+}
+
+.favo-icons{                                                      /*tạo các biểu tượng phần sở thích*/
+  grid-column: 1/-1;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4,auto);
+  gap: 10px;
+  padding-top: 28px;
+}
+
+/* Chung chi - Giai thuong */
+
+#certificate .container{
+  padding: 30px 10px 0 30px;
+}
+
+.cer-row{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 100%;                                /*chia 2 cột, cột phải có padding left để tạo viền*/
+  gap: 0 0;
+  padding: 0;
+}
+
+.cer-details{
+  display: grid;
+  grid-template-columns: 100%;
+  gap: 20px 0;
+  padding: 40px 0;
+  border-bottom: 1px solid #d6c08d;
+}
+
+.cer-details img{
+  width: 100%;
+}
+
+.cer-line--bottom{
+  border: none;
+}
+
+.border-left{
+  padding-left: none;
+  border-left: none;
+}
+
+.last-row .cer-details{
+  border-bottom: none;
+}
+
+/* Du an */
+#project .container{
+  padding: 50px 0 0 0;
+}
+.jobs-box{
+  display: grid;
+  grid-template-columns: 100%;                              /*chia 3 cột bằng nhau tương ứng 3 dự án*/
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0 10px;
+}
+
+.job-cols{
+  margin: 10px 0 62px 0;
+  border-collapse: collapse;
+  border: 1px solid #c9c9c9;
+}
+
+.job-cols img{
+  width: 100%;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+.job-info span{
+  display: block;
+  padding: 10px 0 0 0;
+}
+
+/* Lien He */
+
+#footer span{
+  display: none;
+}
+
+#footer li{
+  list-style: none;
+  padding: 0 10px 10px 10px;
+}
+
+}

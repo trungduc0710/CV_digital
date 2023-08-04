@@ -1,0 +1,202 @@
+/* PHẦN CHUNG */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arimo", sans-serif;
+  }
+
+  div.container{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas:
+      "sec1 sec3 sec5"
+      "sec2 sec4 sec5"
+      ;
+    gap: 20px;
+    padding: 20px 20px;
+    background: #0000FF;
+    line-height: 1.4;
+  }
+
+  .section:first-child{
+    grid-area: sec1;
+  }
+
+  .section:nth-child(2){
+    grid-area: sec2;
+  }
+
+  .section:nth-child(3){
+    grid-area: sec3;
+  }
+
+  .section:nth-child(4){
+    grid-area: sec4;
+  }
+
+  .section:nth-child(5){
+    grid-area: sec5;
+  }
+
+  .section{
+    background: #F0F8FF;
+
+  }
+
+  .boxs{
+    margin: 10px 20px 50px 20px;
+    border-top: 1px solid #8d8d8d;
+  }
+
+  .row-content{
+    display: flex;
+    align-items: center;
+  }
+
+  img.icon{
+    width: 24px;
+    height: 24px;
+  }
+
+  h1.section-title{
+    font-size: 32px;
+    margin-left: 20px;
+    padding-top: 10px;
+    color: #1005FF;
+  }
+
+  .details h2{
+    font-size: 16px;
+    font-weight: bold;
+    padding-top: 10px;
+  }
+
+svg{
+    margin: 0 20px;
+  }
+
+  /* GOALS */
+.goals .row-content{
+  border-bottom: 1px solid #afafaf67;
+} 
+
+/* SCOPES */
+
+.scopes .col-content:first-child{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.scopes .col-content:last-child{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.scopes .boxs{
+  display: flex;
+}
+
+h1.in-out{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+/* PRIMARY */
+
+.primary img{
+  margin: 0 20px;
+}
+
+
+/* TIMELINE */
+  .timeline{
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+
+  .timeline .details{
+    padding-left: 10px;
+    border-bottom: 1px dotted #3795ff;
+  } 
+
+  .timeline span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background: #9E88FF;
+    font-size: 22px;
+    color: #fff;
+  }
+
+@media screen and (max-width: 992px) {
+  div.container{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-areas:
+      "sec1"
+      "sec2"
+      "sec3"
+      "sec4"
+      "sec5"
+      ;
+    gap: 20px;
+    padding: 20px 20px;
+    background: blue;
+    line-height: 1.4;
+  }
+
+  .row-content{
+    display: block;
+    margin-top: 20px;
+  }
+
+  .details{
+    padding-left: 20px;
+  }
+
+  svg{
+    height: 24px;
+    width: 100%;
+    margin: 0;
+  }
+
+  /* GOALS */
+
+
+  /* SCOPES */
+
+.scopes .col-content:first-child{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.scopes .col-content:last-child{
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.scopes .boxs{
+  display: block;
+}
+
+/* PRIMARY */
+.primary img{
+  text-align: center;
+}
+
+/* TIMELINE */
+.timeline span{
+  margin: 10px;
+}
+
+}
+
