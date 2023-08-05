@@ -1,7 +1,6 @@
 /* 576px; 768px; 992px; 1200px; 1400px */
 @media screen and (max-width: 768px) {
   section > .container {
-    width: 100%;
     margin: 0 auto;
     display: block;
     padding: 30px 0px;
@@ -18,7 +17,7 @@
   }
 
   /* Banner */
-
+/*
   #banner {
     width: 100%;
     margin: 0;
@@ -32,8 +31,8 @@
     top: 20%;
     left: 50%;
     transform-origin: translate(-0%, 0%);                    /*căn giữa chữ trên banner*/
-  }
-
+  /* } */
+/*
   #banner span {
     font-size: 12px;
     position: absolute;
@@ -42,11 +41,13 @@
     transform: translate(-50%, 0);
     color: #f0f0f085;
   }
-
+*/
   /* NAVIGATION */
+
 
   nav.container {
     flex-direction: column;
+    padding: 0 20px;
   }
 
   .avatar {
@@ -100,7 +101,7 @@
 
 .job-info-box {
   display: grid;
-  grid-template-columns: 100%;                  /*chia lưới có 3 cột rộng bằng nhau*/
+  grid-template-columns: 1fr;                  /*chia lưới có 3 cột rộng bằng nhau*/
   justify-content: center;
   font-size: 16px;
   line-height: 1.5;
@@ -118,16 +119,34 @@
   padding: 40px 20px 40px 20px;
 }
 
+.exp{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
 .skill{
+  grid-column: 1/2;
   grid-row: 2/3;
 }
 
 .lang{
+  grid-column: 1/2;
   grid-row: 3/4;
 }
 
 .act{
+  grid-column: 1/2;
   grid-row: 4/5;
+}
+
+.edu{
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.favo{
+  grid-column: 1/2;
+  grid-row: 6/7;
 }
 
 .favo-icons{                                                      /*tạo các biểu tượng phần sở thích*/

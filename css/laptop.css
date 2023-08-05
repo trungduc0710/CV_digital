@@ -17,8 +17,8 @@ body {
   background: #fafbff;
 }
 
-section > .container {
-  width: 1170px;
+.container {
+  /* width: 1170px; */
   margin: 0 auto;
   display: block;
   padding: 30px 50px;
@@ -36,8 +36,7 @@ section > .container {
 }
 
 /* BANNER */
-#banner {
-  width: 1170px;
+#banner .container {
   height: 350px;
   margin: 0 auto;
   position: relative;
@@ -48,25 +47,26 @@ section > .container {
     url(../images/banner2.JPG);
   background-size: cover;
   background-position:center;
-  color: #fff;
 }
 
-#banner h1 {
-  font-size: 34px;
+#banner .banner-text {
+  width: 100%;
   font-weight: 500;
   position: absolute;
   top: 20%;
   left: 50%;
   transform: translate(-50%, 0);                    /*căn giữa chữ trên banner*/
+  text-align: center;
+  color: #f0f0f0ef;
 }
 
-#banner span {
+.banner-text h1 {
+  font-size: 34px;
+  font-weight: 500;
+}
+
+.banner-text span {
   font-size: 12px;
-  position: absolute;
-  top: 38%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  color: #f0f0f085;
 }
 
 /* NAVIGATION BAR */
@@ -74,7 +74,7 @@ section > .container {
 nav.container {
   display: flex;
   justify-content: center;
-  padding: 0 50px !important;
+  padding: 0 50px;
 }
 
 #nav-bar .container a {
@@ -185,7 +185,7 @@ a i {
 
 .job-info-box {
   display: grid;
-  grid-template-columns: repeat(3, 32%);                  /*chia lưới có 3 cột rộng bằng nhau*/
+  grid-template-columns: repeat(3, 1fr);                  /*chia lưới có 3 cột rộng bằng nhau*/
   justify-content: center;
   font-size: 16px;
   line-height: 1.5;
@@ -245,7 +245,7 @@ a i {
 /* So thich */
 
 .favo-list{        
-  grid-template-columns: repeat(auto-fit,minmax(50px,1fr));                                            /*tạo các biểu tượng phần sở thích*/
+  grid-template-columns: repeat(auto-fit,minmax(70px,1fr));                                            /*tạo các biểu tượng phần sở thích*/
   grid-column: 1/-1;
   display: grid;
   justify-items: center;
@@ -254,7 +254,9 @@ a i {
 }
 
 .favo--icon{
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
 }
 
 .favo--icon span{
@@ -264,6 +266,7 @@ a i {
   height: 44px;
   align-items: center;
   justify-content: center;
+  margin: 0 auto;
   border-radius: 50%;
   border: 1px solid #1187e7cc;
 }
@@ -271,6 +274,11 @@ a i {
 .favo--icon span i{
   color: #1187e7cc;
   font-size: 20px;
+}
+
+.favo--icon p{
+  text-align: center;
+  padding-top: 10px;
 }
 
 /* Ky nang - Ngon ngu */
@@ -313,7 +321,7 @@ a i {
 
 .cer-details{
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 1fr 1fr;
   column-gap: 20px;
 }
 
@@ -323,7 +331,7 @@ a i {
 }
 
 .cer-details img{
-  width: 250px;
+  width: 100%;
 }
 
 .cer--content p:first-child{
@@ -342,18 +350,22 @@ a i {
   display: grid;
   grid-template-columns: repeat(3, 32%);                              /*chia 3 cột bằng nhau tương ứng 3 dự án*/
   justify-content: center;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
   column-gap: 20px;
 }
 
 .job-cols{
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border: 1px solid #c9c9c9;
 }
 
 .job-cols img{
   width: 100%;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .job-name{
@@ -404,11 +416,31 @@ a i {
 }
 
 .job-info-table tr{
-  border-top: 1px solid #c9c9c9;
+  border-bottom: 1px solid #c9c9c9;
 }
 
 .job-info-table tr:first-child{
   border-top: none;
+}
+
+.job-more{
+  display: block;
+  text-align: center;
+  height: auto;
+  margin: 20px 0;
+}
+
+.job-more a{
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: #1187e7cc;
+  color: #fff;
+}
+
+.job-more a:hover{
+  background:#c9c9c9;
+  color: #1187e7cc;
 }
 
 /* LIEN HE */

@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/laptop.css" />
-    <link rel="stylesheet" href="./css/tablet.css" />
-    <link rel="stylesheet" href="./css/mobile.css" />
-    <link rel="stylesheet" href="./css/font.css" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -24,13 +19,22 @@
       crossorigin="anonymous"
     />
 
+    <link rel="stylesheet" href="./css/laptop.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/font.css" />
+
     <title>Assignment 03</title>
   </head>
   <body>
     <!-- PHẦN BANNER -->
-    <div id="banner" class="container">
-      <h1>Nguyễn Trung Đức</h1>
-      <span>Full Stack Developer</span>
+    <div id="banner">
+      <div class="container">
+        <div class="banner-text">
+          <h1>Nguyễn Trung Đức</h1>
+          <span>Full Stack Developer</span>
+        </div>
+      </div>
     </div>
 
     <!-- PHẦN ĐIỀU HƯỚNG NAVIGATION -->
@@ -276,89 +280,104 @@
         <h1 class="section-title">Dự án</h1>
         <div class="jobs-box">
           <div class="job-cols">
-            <img src="images/project_1.png" alt="Du An 01" />
-            <div class="job-name">CV CÁ NHÂN</div>
-            <div class="job-info">
-              <span class="job-info--time">2023</span>
-              <span><i class="icon-user-1"></i>FUNiX</span>
-              <span><i class="icon-lamp"></i>Developer</span>
+            <div>
+              <img src="images/project_1.png" alt="Du An 01" />
+              <div class="job-name">CV CÁ NHÂN</div>
+              <div class="job-info">
+                <span class="job-info--time">2023</span>
+                <span><i class="icon-user-1"></i>FUNiX</span>
+                <span><i class="icon-lamp"></i>Developer</span>
+              </div>
+              <table class="job-info-table">
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
+                    như kỹ năng nghề nghiệp
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- HTML, CSS</td>
+                </tr>
+              </table>
             </div>
-            <table class="job-info-table">
-              <tr>
-                <th>Mô tả</th>
-                <td>
-                  Trang Web CV cá nhân online. Gồm các thông tin cá nhân cũng
-                  như kỹ năng nghề nghiệp
-                </td>
-              </tr>
-              <tr>
-                <th>Nhiệm vụ</th>
-                <td>
-                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
-                </td>
-              </tr>
-              <tr>
-                <th>Công nghệ</th>
-                <td>- HTML, CSS</td>
-              </tr>
-            </table>
+            <div class="job-more">
+              <a href="Porject-Charter.html">Xem thêm</a>
+            </div>
           </div>
           <div class="job-cols">
-            <img src="images/project_2.png" alt="Du An 02" />
-            <div class="job-name">TRANG WEB QUẢN LÝ THÚ CƯNG</div>
-            <div class="job-info">
-              <span class="job-info--time">2023</span>
-              <span><i class="icon-user-1"></i>FUNiX</span>
-              <span><i class="icon-lamp"></i>Developer</span>
+            <div>
+              <img src="images/project_2.png" alt="Du An 02" />
+              <div class="job-name">TRANG WEB QUẢN LÝ THÚ CƯNG</div>
+              <div class="job-info">
+                <span class="job-info--time">2023</span>
+                <span><i class="icon-user-1"></i>FUNiX</span>
+                <span><i class="icon-lamp"></i>Developer</span>
+              </div>
+              <table class="job-info-table">
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân
+                    nặng, giống, tình trạng tiêm chủng, ... Bao gồm các chức
+                    năng thêm/ sửa/ xóa.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- HTML, CSS, Javascript</td>
+                </tr>
+              </table>
             </div>
-            <table class="job-info-table">
-              <tr>
-                <th>Mô tả</th>
-                <td>
-                  Ứng dụng giúp quản lý các thông tin của thú cưng như: Cân
-                  nặng, giống, tình trạng tiêm chủng, ... Bao gồm các chức năng
-                  thêm/ sửa/ xóa.
-                </td>
-              </tr>
-              <tr>
-                <th>Nhiệm vụ</th>
-                <td>
-                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
-                </td>
-              </tr>
-              <tr>
-                <th>Công nghệ</th>
-                <td>- HTML, CSS, Javascript</td>
-              </tr>
-            </table>
+            <div class="job-more">
+              <a href="Porject-Charter.html">Xem thêm</a>
+            </div>
           </div>
           <div class="job-cols">
-            <img src="images/project_3.png" alt="Du An 03" />
-            <div class="job-name">TRANG WEB XEM TIN TỨC</div>
-            <div class="job-info">
-              <span class="job-info--time">2023</span>
-              <span><i class="icon-user-1"></i>FUNiX</span>
-              <span><i class="icon-lamp"></i>Developer</span>
+            <div>
+              <img src="images/project_3.png" alt="Du An 03" />
+              <div class="job-name">TRANG WEB XEM TIN TỨC</div>
+              <div class="job-info">
+                <span class="job-info--time">2023</span>
+                <span><i class="icon-user-1"></i>FUNiX</span>
+                <span><i class="icon-lamp"></i>Developer</span>
+              </div>
+              <table class="job-info-table">
+                <tr>
+                  <th>Mô tả</th>
+                  <td>
+                    Trong Web xem tin tức từ nhiều nguồn khác nhau, người dùng
+                    có thể tìm kiếm các tin tức dựa theo các từ khóa.
+                  </td>
+                </tr>
+                <tr>
+                  <th>Nhiệm vụ</th>
+                  <td>
+                    - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
+                  </td>
+                </tr>
+                <tr>
+                  <th>Công nghệ</th>
+                  <td>- HTML, CSS, Javascript</td>
+                </tr>
+              </table>
             </div>
-            <table class="job-info-table">
-              <tr>
-                <th>Mô tả</th>
-                <td>
-                  Trong Web xem tin tức từ nhiều nguồn khác nhau, người dùng có
-                  thể tìm kiếm các tin tức dựa theo các từ khóa.
-                </td>
-              </tr>
-              <tr>
-                <th>Nhiệm vụ</th>
-                <td>
-                  - Phát triển code - Review code - Tối ưu code - Xử lý lỗi
-                </td>
-              </tr>
-              <tr>
-                <th>Công nghệ</th>
-                <td>- HTML, CSS, Javascript</td>
-              </tr>
-            </table>
+            <div class="job-more">
+              <a href="Porject-Charter.html">Xem thêm</a>
+            </div>
           </div>
         </div>
       </div>
