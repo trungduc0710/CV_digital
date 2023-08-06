@@ -122,4 +122,11 @@
   border-left: 1px solid #d6c08d;
 }
 
+/* Lien He */
+
+#footer i{
+  font-size: 4vw;
+  color: #1187e7af;
+  }
+
 }
